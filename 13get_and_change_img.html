@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p onclick="test()" >click image change</p> -->
+    <p onmouseenter="test()" >onmouseenter image change</p> 
+    <img src="" height="200px" width="200px" id="im">
+    <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="200px" width="200px" id="im1">
+
+    <script>
+        var img_tag=document.getElementById('im');
+        img_tag.src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    
+        var img_tag1=document.getElementById('im1');
+      
+
+        function test(){
+            img_tag1.src="https://sp.yimg.com/ib/th?&id=ODL.404a6a7ae7885fe18625e0acd6ee5c87";
+        }
+    </script>
+</body>
+</html>
