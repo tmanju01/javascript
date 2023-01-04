@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .x{
+        height: 200px;
+        width: 200px;
+        background: hotpink;
+        padding-top: 30px;
+        padding-left: 30px;
+        line-height: 150px;
+        margin: 50px auto;
+        font-size: 56px;
+        color: blueviolet;
+        font-family:cursive;
+
+      }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="demo">Manju</h1>
+     
+    <button onclick="addcss()">Add CSS</button>
+    <button onclick="removecss()">Remove CSS</button>
+    <button onclick="addremovecss()">AddRemove CSS</button>
+
+
+
+    <script> 
+        // h1 = document.getElementById('demo');
+        h1_tag = document.getElementById('demo');
+         
+
+        //   add a class
+        //  h1.classList.add('x');
+
+
+        function addcss()
+        {
+            h1_tag.classList.add('x');
+        }
+
+        function removecss()
+        {
+            h1_tag.classList.remove('x');
+        }
+
+        function addremovecss()
+        {
+            h1_tag.classList.toggle('x');
+        }
+        
+
+
+    </script>
+</body>
+</html>
