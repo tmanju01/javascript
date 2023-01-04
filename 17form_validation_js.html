@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+    Name:<input type="text" name="" id="nm" value="" >
+    <span id="nmerror"></span>
+    
+    <br><br>
+    Email:<input type="email" name="" id="em" value="">
+    <span id="emerror"></span>
+    <br><br>
+
+    Mobile:<input type="text" name="" id="mb">
+    <span id="mberror"></span>
+    <br><br>
+   
+    
+    <input type="submit" name="">
+    </form>
+
+    <script>
+        var name1=document.getElementById("nm");
+        var email1=document.getElementById("em");
+        var mobile1=document.getElementById("mb");
+        var nmspan=document.getElementById("nmerror");
+        var emspan=document.getElementById("emerror");
+        var mbspan=document.getElementById("mberror");
+        console.log(name1);
+        console.log(name1.value);
+        //  nmspan.innerHTML="* Name is required...!";
+        
+        // alert("name is required");
+
+        function validateForm()     
+        {
+            if(name1.value == "")
+            {
+            //    alert("Name is required..!");
+            nmspan.innerHTML="* Name is required...!";
+            nmspan.style.color="red";
+               return false;
+            
+            }
+            else{
+                nmspan.innerHTML="";
+            }
+            if(email1.value == "")
+            {
+            //    alert("Email is required..!");
+            emspan.innerHTML="* Email is required...!";
+            emspan.style.color="red";
+               return false;
+            
+            }
+            else{
+                emspan.innerHTML="";
+            }
+
+            if(mobile1.value == "")
+            {
+            //    alert("Mobile is required..!");
+            mbspan.innerHTML="* Mobile is required...!";
+            mbspan.style.color="red";
+               return false;
+            
+            }
+
+            else{
+                mbspan.innerHTML="";
+            }
+
+
+        }
+    </script>
+
+</body>
+</html>
