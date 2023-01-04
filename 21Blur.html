@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur</title>
+</head>
+<body>
+    Name:<input type="text" name="" value="" id="nm">
+    <span id="nmErr"></span><br><br>
+
+    Email:<input type="text" name="" value="" id="em">
+    <span id="emErr"></span><br><br>
+
+
+    Mobile:<input type="text" name="" value="" id="mb">
+    <span id="mbErr"></span><br><br>
+
+    <button onclick="test()">sign up</button>
+
+    <script>
+        var name_tag=document.getElementById('nm');
+        var email_tag=document.getElementById('em');
+        var mobile_tag=document.getElementById('mb');
+        var nmspan=document.getElementById('nmErr');
+        var emspan=document.getElementById('emErr');
+        var mbspan=document.getElementById('mbErr');
+
+
+        function test(){
+            if(name_tag.value==""){
+                nmspan.innerHTML="*Name is reqired..!";
+                name_tag.style.border="1px solid red";
+                nmspan.style.color="red";
+                return;
+            }
+            else{
+                nmspan.innerHTML="";
+                name_tag.style.border="1px solid green";
+            }
+            if(email_tag.value==""){
+                emspan.innerHTML="*Email is reqired..!";
+                email_tag.style.border="1px solid red";
+                emspan.style.color="red";
+                return;
+            }
+            else{
+                emspan.innerHTML="";
+                email_tag.style.border="1px solid green";
+            }
+            if(mobile_tag.value==""){
+                mbspan.innerHTML="*Mobile is reqired..!";
+                mobile_tag.style.border="1px solid red";
+                mbspan.style.color="red";
+                return;
+            }
+            else{
+                mbspan.innerHTML="";
+                mobile_tag.style.border="1px solid green";
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
