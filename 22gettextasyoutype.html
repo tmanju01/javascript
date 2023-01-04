@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <!-- <input type="text" value="" id="text" onkeypress="test()"> -->
+
+    <input type="text" value="" id="text" onkeyup="test()">
+
+    <textarea name="" id="area" cols="30" rows="10"> </textarea>
+
+    <!-- <button onclick="test()">Get Text</button> -->
+
+    <script>
+        var input_tag=document.getElementById('text');
+        var area_tag=document.getElementById('area');
+
+        function test(){
+            area_tag.innerHTML=input_tag.value;
+        }
+    </script>
+
+
+
+    
+
+
+    
+
+    
+</body>
+</html>
