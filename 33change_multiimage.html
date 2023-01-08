@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            position: relative;
+        }
+        button{
+            position: absolute;
+            top: 300px;
+            right: 50px;
+            background: transparent;
+            box-shadow: 0 0 10px #ffff inset;
+            border: none;
+            padding: 15px 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        /* .x
+        {
+            animation: zoomIt 1s;
+        }
+
+        @keyframes zoomIt 
+        {
+            from{transform: scale(1);}
+            to{transform: scale(1.8);}
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <img src="i1.jpg" id="i" height="650px" width="100%">
+        <button onclick="changeimge()">></button>
+        
+ 
+        <script>
+
+            var img=document.getElementById("i");
+
+
+//             function changeImages()
+// {
+ //  img.src = 'i2.jpg';
+
+     // if(img.src == 'http://127.0.0.1:5500/text/i1.jpg')
+     // {
+     //     img.src = 'http://127.0.0.1:5500/text/i2.jpg';
+     // }
+
+     // else
+     // {
+     //     img.src = 'http://127.0.0.1:5500/text/i1.jpg';
+     // }
+         
+
+            function changeimge(){
+                if(img.src.match("i1.jpg")){
+                    img.src="i2.jpg";
+                    // img.classList.add('x');
+                    
+                }
+                else if(img.src.match("i2.jpg")){
+                    img.src="i3.jpg";
+                    // img.classList.add('x');
+                    
+
+                }
+                else if(img.src.match("i3.jpg")){
+                    img.src="i4.jpg";
+                    // img.classList.add('x');
+                    
+                }
+                else if(img.src.match("i4.jpg")){
+                    img.src="i5.jpg";
+                    // img.classList.add('x');
+                    
+                }
+                else{
+                    img.src="i1.jpg";
+                    // img.classList.add('x');
+                    
+                }
+                
+                // setTimeout( 'changeimge()',1000)
+            }
+            
+            // changeimge()
+           
+        </script>
+    </div>
+</body>
+</html>
