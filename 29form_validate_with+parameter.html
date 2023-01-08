@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Name:<input type="text" name="" value="" id="nm" onblur="checkForm(nm,nmErr)">
+    <span id="nmErr"></span><br><br>
+
+    Emali:<input type="text" name="" value="" id="em" onblur="checkForm(em,emErr)">
+    <span id="emErr"></span><br><br>
+
+    Mobile:<input type="text" name="" value="" id="mb" onblur="checkForm(mb,emErr)">
+    <span id="mbErr"></span>
+
+    <script>
+        name_tag=document.getElementById("nm");
+        email_tag=document.getElementById("em");
+        mobile_tag=document.getElementById("mb");
+        nmspan=document.getElementById("nmErr");
+        emspan=document.getElementById("emErr");
+        mbspan=document.getElementById("mbErr");
+
+        function checkForm(Niku,val){
+            if(Niku.value==""){
+                val.innerHTML="Required...!";
+            }
+            else{
+                val.innerHTML="";
+            }
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html>
