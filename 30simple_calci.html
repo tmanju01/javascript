@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   Num1= <input type="text" name="" value="" id="text">
+   Num2= <input type="" name="" value="" id="text1"><br><br>
+     
+    <b id="msg"></b><br><br>
+
+    <button onclick="sum()"> sum</button>
+    <button onclick=" sub()">sub</button>
+    <button onclick=" mul()">mul</button>
+    <button onclick="div()">div</button>
+    <button onclick="mod()">mod</button>
+
+
+    <script>
+        var input_tag=document.getElementById("text");
+        var input_tag1=document.getElementById("text1");
+         
+             res=document.getElementById("msg");
+        //      console.log(input_tag);
+        //  console.log(input_tag1);
+        //  console.log(res);
+
+        function sum(){
+
+            res.innerHTML=parseInt(input_tag.value )+ parseInt(input_tag1.value);
+             
+        }
+
+        function sub()
+        {
+            res.innerHTML=parseInt(input_tag.value) - parseInt(input_tag1.value);
+        }
+
+
+        function mul(){
+            res.innerHTML=parseInt(input_tag.value) * parseInt(input_tag1.value);
+        }
+
+
+        function div(){
+            res.innerHTML=parseInt(input_tag.value) / parseInt(input_tag1.value);
+        }
+        
+        function mod(){
+            res.innerHTML=parseInt(input_tag.value) % parseInt(input_tag1.value);
+        }
+    </script>
+</body>
+</html>
