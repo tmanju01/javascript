@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Name:<input type="text" name="" value="" id="nm" onblur="test(nm,nmErr)">
+    <span id="nmErr"></span><br><br>
+
+    Email:<input type="email" name="" value="" id="em"  onblur="test(em,emErr)">
+    <span id="emErr"></span><br><br>
+
+    Mobile:<input type="text" name=""  value="" id="mb" onblur="test(mb,mbErr)">
+    <span id="mbErr"></span>
+
+    <script>
+       
+    //    var name1=document.getElementById("nm");
+    //    var email1 = document.getElementById("em");
+    //    var mobile1=document.getElementById("mb");
+
+    //    var nmspan=document.getElementById("nmErr");
+    //    var emspan=document.getElementById("emErr");
+    //    var  mbspan=document.getElementById("mbErr");
+  
+    ex_nm = /^[a-zA-Z]+$/;
+
+    // exp_mb =   /^[0-9]+$/;
+        // exp_mb =   /^[0-9]{4,5}$/;
+
+    // ex_mb=/^[0-9]{10}+$/;
+        
+       function test(e,spid)
+       {
+        if(e.value == ""){
+
+          spid.innerHTML="requred...!";
+            spid.style.color="red";
+            e.style.border="1px solid red";
+        }
+        else if(!ex_nm.test(e.value))
+        {
+
+            // alert(" only letters..!");
+            spid.innerHTML="only letters";
+
+        }
+       
+
+        else{
+            spid.innerHTML="";
+            e.style.border="1px solid black";
+        }
+       }
+
+    </script>
+ 
+</body>
+</html>
