@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x = [3,4,[true,"Hello",56],{name:"Manju",age:"22",course:"Web Desigining"}];
+        // document.write(x[0]);
+        // document.write(x[1]);
+
+        document.write(x[3].course + "<br>");
+
+        // document.write(x[2][2]);
+
+        // obj={index0:"value1",index1:"value2",index2:"value2"}
+        obj={name:"Manju",age:"22",course:"Web Desigining"};
+        // document.write(obj.course);
+        // document.write(obj.name);
+        // document.write(obj.age);
+
+for(test in obj)
+{
+    // document.write(test + "<br>");
+    document.write(test +"=>" + obj[test]+ "<br>");
+}
+    </script>
+</body>
+</html>
