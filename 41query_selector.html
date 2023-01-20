@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    male<input type="radio" name="x">
+    female<input type="radio" name="x">
+
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+    <h1 id="x" class="x">h1</h1>
+
+   
+    <script>
+        // h1tag=document.getElementById("x");
+        h1tag=document.querySelector("#x");
+        // h1tag=document.getElementsByClassName("x");
+        h1class=document.querySelectorAll("#x");
+        console.log(h1tag);
+         h1tag.style.color="blue";
+
+    //  h1tag[0].style.color="pink";
+    // h1class[1].style.color="pink";
+    // h1class[2].style.color="pink";
+    // h1class[3].style.color="pink";
+
+  for(i=0;i<h1class.length;i++)
+  {
+    h1class[i].style.color="green";
+    // document.write(h1class[1]+ "<br>");
+  }
+
+//   test=document.getElementsByTagName("h1");
+//   console.log(test);
+  test=document.getElementsByName("x");
+  console.log(test);
+
+
+    </script>
+</body>
+</html>
