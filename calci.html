@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            height: 340px;
+            width: 450px;
+            border: 8px solid seagreen;
+            margin: 50px auto;
+            background-color: darkslategray;
+        }
+        .calci{
+            border: 2px solid transparent;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 60px 60px 60px 60px;
+            
+        }
+        .x{
+           /* background-color: aquamarine; */
+           /* border: 2px solid green; */
+           text-align: center;
+           padding-top: 10px;
+           margin: 10px;
+           background-color: white;
+           border-radius: 8px;
+        }
+        .y{
+            text-align: center;
+           padding-top: 10px;
+           margin: 10px;
+           background-color: white;
+           border-radius: 8px;
+        }
+        h1{
+            border: 2px solid transparent;
+            padding: 20px 10px;
+        }
+        #col{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 id="res">o/p</h1>
+        <div class="calci">
+              <div class="x" id="num1" onclick=" gets()">1</div>
+              <div class="x" id="num2" onclick=" gets()" >2</div>
+              <div class="x" id="num3" onclick="gets()">3</div>
+              <div id="col" class="y" onclick=" add()">+</div>
+
+
+              <div class="x" id="num4" onclick=" gets()">4</div>
+              <div class="x" id="num5" onclick=" gets()">5</div>
+              <div class="x" id="num6" onclick=" gets()">6</div>
+              <div  id="col" class="y" onclick="sub()">-</div>
+
+
+              <div class="x" id="num7" onclick=" gets()">7</div>
+              <div class="x" id="num8" onclick=" gets()">8</div>
+              <div class="x" id="num9" onclick=" gets()">9</div>
+              <div id="col" class="y" onclick=" mul()" >*</div>
+
+              <div class="x" id="double_zero" onclick=" gets()">00</div>
+              <div class="x" id="zero" onclick=" gets()">0</div>
+              <div  id="col" class="y" onclick=" equal()">=</div>
+              <div  id="col" class="y" onclick=" div()">/</div>
+                            
+        </div>
+    </div>
+    <script>
+        // result=document.getElementById('res');
+        // num_1=document.getElementById('num1');
+        //  num_2=document.getElementById('num2');
+        //  num_3=document.getElementById('num3');
+        op =  document.getElementById('res');
+        num= document.getElementsByClassName('.x');
+        // xl= document.querySelectorAll('.x');
+        // btn=document.getElementsById('col');
+
+       console.log(num);
+    //    console.log(num_1.innerHTML);
+
+    //    function btn(){
+    //     for(i=1;i<xl.length;i++)
+    //     {
+    //         op.innerHTML=parseInt(i.innerHTML) + parseInt(i.innerHTML);
+    //     }
+
+    //    }
+
+    //   function get1()
+    //   {
+    //     op.innerHTML = num_1.innerHTML
+        
+    //   }
+    //   function get2()
+    //   {
+    //     op.innerHTML = num_2.innerHTML
+        
+    //   }
+
+    function gets(){
+    op.innerHTML =num.innerHTML;
+
+    }
+      function add()
+      {
+        op.innerHTML = parseInt(num.innerHTML) +  parseInt(num.innerHTML)
+       
+      }  
+      function sub()
+      {
+        op.innerHTML = parseInt (num.innerHTML) - parseInt(num.innerHTML)
+          }
+
+          function mul()
+          {
+        op.innerHTML = parseInt (num.innerHTML) * parseInt(num.innerHTML)
+          }
+          function div()
+          {
+        op.innerHTML = parseInt (num.innerHTML) / parseInt(num.innerHTML)
+          }
+         
+     
+    </script>
+</body>
+</html>
