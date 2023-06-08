@@ -9,7 +9,8 @@
 <body>
 
    Num1= <input type="text" name="" value="" id="text">
-   Num2= <input type="" name="" value="" id="text1"><br><br>
+   <!-- Num2= <input type="" name="" value="" id="text1"><br><br> -->
+   <span id="s1">34</span>
      
     <b id="msg"></b><br><br>
 
@@ -23,6 +24,8 @@
     <script>
         var input_tag=document.getElementById("text");
         var input_tag1=document.getElementById("text1");
+        var s1= document.getElementById('s1');
+        console.log(s1);
          
              res=document.getElementById("msg");
         //      console.log(input_tag);
@@ -42,7 +45,8 @@
 
 
         function mul(){
-            res.innerHTML=parseInt(input_tag.value) * parseInt(input_tag1.value);
+            res.innerHTML=parseInt(input_tag.value) * parseInt(s1.innerHTML);
+            console.log(res);
         }
 
 
