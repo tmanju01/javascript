@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        margin: 50px auto;
+        background: black;
+    }
+    .long_btn{
+        width: 350px;
+        height: 30px;
+    }
+    .btn{
+        width: 100px;
+        height: 30px;
+    }
+    input{
+        height: 50px;
+        width: 465px;
+    }
+    button{
+        font-size: 20px;
+    }
+    button:active{
+         transform: scale(0.95);
+    }
+   
+</style>
+<body>
+    
+    <div class="main">
+    <table border="1px solid black" cellspacing="10px" cellpadding="5px">
+        <tr>
+            <td colspan="4">
+               <input type="text" name="" value="" id="test">
+                <!-- <textarea cols="62" rows="5" value="" id="test"></textarea> -->
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="3" ><button class="long_btn" style="background: blue; " id="clearr_btn">c</button></td>
+            <td><button class="btn" id="div_btn">/</button></td>
+           
+        </tr>
+
+        <tr>
+            <td><button class="btn">7</button></td>
+            <td><button class="btn">8</button></td>
+            <td><button class="btn">9</button></td>
+            <td><button class="btn" id="mul_btn">*</button></td>
+        </tr>
+
+        <tr>
+            <td><button class="btn">4</button></td>
+            <td><button class="btn">5</button></td>
+            <td><button class="btn">6</button></td>
+            <td><button class="btn" id="sub_btn">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="btn" id="1_btn" onclick="test()" >1</button></td>
+            <td><button class="btn">2</button></td>
+            <td><button class="btn">3</button></td>
+            <td><button class="btn" id="sum_btn">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button class="long_btn" >0</button></td>
+            <td><button class="btn" style="background: green; " id="eqval_btn">=</button></td>
+           
+        </tr>
+
+    </table>
+
+    </div>
+    <script>
+          var clearr =document.getElementById('clearr_btn');
+            console.log(clearr)
+
+        var btn=document.getElementById('1_btn');
+         console.log(btn);
+        
+         var input_tag=document.getElementById("test");
+         console.log(input_tag);
+         
+
+         function test(){
+            
+            input_tag.innerHTML=btn.value;
+             
+         }
+   
+   </script>
+
+</body>
+</html>
